@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_05"
+    android:padding="16dp"
+    tools:context="com.spurs.shotmonster.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="400dp"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:src="@drawable/btn_select_start"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:onClick="clickStart"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:src="@drawable/btn_select_exit"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:onClick="clickExit"/>
+
+        
+    </LinearLayout>
+
+</RelativeLayout>
